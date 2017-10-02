@@ -11,7 +11,7 @@ public class InMemUserRepository implements UserRepository {
     private Map<Long,User> userRepo = new HashMap<>();
 
     public InMemUserRepository(){}
-    
+
     @Override
     public User save(User user) {
         if(user.getId()==null) {
